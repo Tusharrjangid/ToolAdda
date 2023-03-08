@@ -31,6 +31,7 @@ app.use("/api/v1",user)
 app.use("/api/v1",order)
 app.use("/api/v1",payment)
 
+// "print some value"
 app.get("/",(req,res)=>{
     app.use(express.static(path.join(__dirname,'build')))
     res.sendFile(path.resolve(__dirname,'build/index.html'))
